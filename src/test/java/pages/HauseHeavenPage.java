@@ -10,7 +10,8 @@ public class HauseHeavenPage {
     public HauseHeavenPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//div[@id='main-wrapper']")
+    //Ust kisimdaki Home Linki
+    @FindBy(xpath = "(//*[@href='https://qa.hauseheaven.com'])[2]")
     public WebElement hauseHeaveHomePageTest;
     @FindBy(xpath ="//a[@href='https://qa.hauseheaven.com/']")
     public WebElement clickOnHome;
@@ -106,6 +107,73 @@ public class HauseHeavenPage {
     public WebElement signUpToday;
     @FindBy(xpath = "//h4[@class='m-0']")
     public WebElement foundResults;
+    @FindBy(xpath = "//input[@placeholder='Email/Username']")
+    public WebElement nameUsername;
+    @FindBy(xpath = "//input[@placeholder='Password']")
+    public WebElement password;
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement login;
+    @FindBy(xpath = "//h4[@class='mb-0']")
+    public WebElement numberOfProjectsVisibleTest;
+    @FindBy(xpath = "//div[@class='container mt-5']")
+    public WebElement allProjectsList;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement firstProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement secondProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement thirdProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement fourthProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement fifthProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement sixthProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement seventhProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement eighthProjectDetails;
+    @FindBy(xpath = "(//div[@class='col-lg-4 col-md-6 col-sm-12'])[1]")
+    public WebElement ninthProjectDetails;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[1]")
+    public WebElement firstProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[2]")
+    public WebElement secondProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[3]")
+    public WebElement thirdProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[4]")
+    public WebElement fourthProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[5]")
+    public WebElement fifthProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[6]")
+    public WebElement sixthtProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[7]")
+    public WebElement seventhProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[8]")
+    public WebElement eighthProject;
+    @FindBy(xpath = "(//a[@class='prt-link-detail text-uppercase'])[9]")
+    public WebElement ninthProject;
+    @FindBy(xpath = "//span[text()='Country']")
+    public WebElement countryOnProjects;
+    @FindBy(xpath = " //*[@id='select2-filter_country_id-result-z2st-1']")
+    public WebElement firstCountrySelect;
+    @FindBy(xpath = "//h2[text()='Login']")
+    public WebElement loginVisibleTest;
+    @FindBy(xpath = "//i[@class='fas fa-user']")
+    public WebElement userNameVisibleTest;
+    @FindBy(xpath = "//span[@title='State']")
+    public WebElement stateOnProjects;
+    @FindBy(xpath = "//span[@title='City']")
+    public WebElement cityOnProjects;
+    @FindBy(xpath = "//span[text()='Category']")
+    public WebElement categoryOnProjects;
+    @FindBy(xpath = "//button[text()='Search']")
+    public WebElement searchOnProjects;
+    @FindBy(xpath = "//button[@class='js-cookie-consent-agree cookie-consent__agree']")
+    public WebElement allowCookies;
+
+
+
 
 
 
