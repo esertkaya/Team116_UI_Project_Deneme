@@ -11,7 +11,7 @@ public class HauseHeavenPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     //Ust kisimdaki Home Linki
-    @FindBy(xpath = "(//*[@href='https://qa.hauseheaven.com'])[2]")
+    @FindBy(xpath = "//*[@class='current-menu-item']")
     public WebElement hauseHeaveHomePageTest;
     @FindBy(xpath ="//a[@href='https://qa.hauseheaven.com/']")
     public WebElement clickOnHome;
@@ -155,12 +155,6 @@ public class HauseHeavenPage {
     public WebElement ninthProject;
     @FindBy(xpath = "//span[text()='Country']")
     public WebElement countryOnProjects;
-    @FindBy(xpath = " //*[@id='select2-filter_country_id-result-z2st-1']")
-    public WebElement firstCountrySelect;
-    @FindBy(xpath = "//h2[text()='Login']")
-    public WebElement loginVisibleTest;
-    @FindBy(xpath = "//i[@class='fas fa-user']")
-    public WebElement userNameVisibleTest;
     @FindBy(xpath = "//span[@title='State']")
     public WebElement stateOnProjects;
     @FindBy(xpath = "//span[@title='City']")
